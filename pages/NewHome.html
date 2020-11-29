@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/NewAddressForm.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img class="logo-content-img" src="/assets/logo.png" alt="" style="height:55px">
+            <div>
+                <span class="contact-text">ADDRESS</span><br>
+                <span class="contact-text address-book">BOOK</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="header-content">
+            <div class="contact-detail-text">
+                Person Details
+                <div class="contact-count"></div>
+            </div>
+            <a href="../pages/AddressBook.html" class="add-button">
+                <label class="add-label">+ Add Person</a>
+            </div>
+            <div class="table-main">
+                <table id="table-display" class="table">
+                    <tr>
+                        <th></th>
+                        <th>FullName</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>ZipCode</th>
+                        <th>PhoneNumber</th>
+                    </tr>
+                    <tr>
+                        <td><img class="profile" alt="" src="/assets/Ellipse -1.png"></td>
+                        <td>Ashwini</td>
+                        <td>Kukatpally</td>
+                        <td>Hyderabad</td>
+                        <td>Telangana</td>
+                        <td>500013</td>
+                        <td>9676138862</td>
+                        <td><img id="1" onclick="remove(this)" alt="delete" src="/assets/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" src="/assets/create-black-18dp.svg"></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <script src="../js/home.js"></script>
+        <script src="../js/site_properties.js"></script>
+    </body>
+    </html>
+
